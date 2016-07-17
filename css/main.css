@@ -35,17 +35,17 @@ body {
 /* ************** HEADER SECTION ******************* */
 
 header {
-    height: 600px;
+    height: 650px;
 	width: 1400px;
-    background: url(../img/kings-landing.JPG) no-repeat 0% 55%;
+    background: url(../img/kings-landing.JPG) no-repeat 0% 40%;
     background-size: cover;
 }
 
 header h1 { 
 	font-family: 'Lora', serif;
-	color: #bbc085;
+	color: #006666;
 	font-size: 30px;
-    padding: 50px 0 20px 0;
+    padding: 50px 0 40px 0;
 }
 
 nav {
@@ -60,8 +60,9 @@ nav ul li{
 nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 18px;
-    color: #828282;
+    font-size: 22px;
+	font-weight: bold;
+    color: #006666;
     padding-left: 80px; 
 }
 
@@ -71,12 +72,12 @@ header h2 {
     font-family: 'Lora', serif;
     font-size: 68px;
     line-height: 80px;
-    color: #9a9b9b;
+    color: #006699;
     padding: 0px 0 20px 0;
 }
 
 header h2 span {
-    color: #262a2b;
+    color: #006666;
 }
 /* ************** ABOUT SECTION ******************* */
 
