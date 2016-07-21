@@ -102,11 +102,12 @@ header h2 span {
 
 #work {
 	background: #CECFE8;
+	height: 550px;
 }
 
 #work .full-width {
 	
-    padding: 115px 0;
+    padding: 45px 0 20px 0;
 }
  
 #work img {
