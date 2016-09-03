@@ -1,15 +1,81 @@
 /* Main Style Sheet for Project 101
 *
 */
-
-/* ************** BASE STYLES ******************* */
-
+html {
+	font-size:16px;
+}
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 }
+/* ================================================ */
+/* MOBILE FIRST =================================== */
+/* ================================================ */
+@media all and (max-width:767px){
+header {
+    height: auto;
+	width: 100%;
+    background: url(../img/kings-landing.JPG) no-repeat 10% 65%;
+    background-size: cover;
+}
+header h1 { 
+	font-family: 'Lora', serif;
+	color: #006666;
+	font-size: 1.875em;
+	text-align:center;
+    padding: 3.5% 0 1% 0;
+}
+nav {
+    /* float: right;  */
+    padding: 10% 2% 0 0%;
+	text-align:center;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a {
+	letter-spacing:.1em;
+	text-align:center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.375em;
+	/* font-weight: bold; */
+    color: #93ece0;
+    padding: 5% 3%; 
+}
+header h2 {
+	display:none;
+    /* width:72%;
+    clear: both; 
+    font-family: 'Lora', serif;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    color: #006666;
+    padding: 0 0 2% 1%; */
+}
+
+/* header h2 span {
+    color: #006666;
+} */
+
+}
+/* ================================================ */
+/* TABLET =================================== */
+/* ================================================ */
+@media all and (min-width:768px)  and (max-width:939px){
+	
+}
+/* ================================================ */
+/* DESKTOP =================================== */
+/* ================================================ */
+@media all and (min-width:940px) and (max-width:1400px){
+/* ************** BASE STYLES ******************* */
+
+
 
 #about, #contact {
-    height: 600px;
+    height: auto;
 }
 
 /* ************** GRID ******************* */
@@ -21,7 +87,7 @@ body {
 
 .half-width {
 	float: left;
-	width: 600px;
+	width: 45%;
 }
 
 .third-width {
@@ -32,11 +98,12 @@ body {
 	height: 345px;
 	width: 520px;
 }
+
 /* ************** HEADER SECTION ******************* */
 
 header {
-    height: 650px;
-	width: 1400px;
+    height: auto;
+	width: 100%;
     background: url(../img/kings-landing.JPG) no-repeat 0% 40%;
     background-size: cover;
 }
@@ -79,6 +146,7 @@ header h2 {
 header h2 span {
     color: #006666;
 }
+
 /* ************** ABOUT SECTION ******************* */
 
 #about .full-width {
@@ -141,7 +209,11 @@ img.sm-social {
 	height: 25px;
 	width: 25px;
 }
+
+
 /* ************** CONTACT SECTION ******************* */
+
+
 #contact {
 	background: #ebebeb;
 	
@@ -194,4 +266,5 @@ img.sm-social {
 #contact ul img {
 	font-size: 32px;
     padding-right: 48px;
+}
 }
