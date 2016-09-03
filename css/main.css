@@ -144,7 +144,7 @@ header h1 {
 	color: #1D96AF;
 	font-size: 1.875rem;
 	padding:0;
-	margin:3% 0 0 0;
+	margin:7% 0 0 0;
 	border-radius:15px;
     background:rgba(0,0,0,0.3);
 }
@@ -161,12 +161,12 @@ h1#logo {
 /* ===== skills list ====== */
 .mission {
 	order:2;
-	width:85%;
-	height: 100px;
-	margin-top:7%;
+	/* width:85%; */
+	height: 150px;
+	margin:7% 0;
+	padding:0 3%;
 	background:rgba(0,0,0,0.3);
 	color:#2ED1CA;
-	padding:2% 2% 5% 2%;
 	border-radius:15px;
 	display:flex;
 	display: -webkit-box;
@@ -175,33 +175,28 @@ h1#logo {
     display: -webkit-flex;
 	justify-content:center;
 	align-items:center;
+
 }
-ul.skills {
-	list-style:none;
-	padding:0;
+.skills {
+	text-align:center;
+	font-size:1.35rem;
 }
-	ul.skills li {
-		color: #69F9FF;
-		font-family: 'Lato', sans-serif;
-		font-weight:300;
-		font-size: 1.3rem;
-		line-height: 1.6rem;
-		border-radius:15px;
-		padding:2% 3%;
-		margin-top:3%;
-	}
-	
+ p span {
+	font-size:2rem;
+}
 /* NAVIGATION ============= */
 
 .menu {
 	order:3;
 }
 nav {
-
+	padding:0;
+	margin-bottom: 7%;
 	
 }
 	nav ul {
-		padding:5% 0;
+		padding:4% 0;
+		margin:0;
 		display:flex;
 		display: -webkit-box;
 		display: -moz-box;
@@ -238,7 +233,7 @@ nav {
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
-	/* flex-flow:row wrap; */
+	flex-flow:column wrap;
 	justify-content:center;
 	align-items:center;
 }
@@ -258,7 +253,10 @@ nav {
 	font-size:1.2rem;
 	border-bottom: 1px solid #ccc;	
 }
-
+/* START HERE NEXT TIME!!!!!!!!!!!!! ===== */
+/* START HERE NEXT TIME!!!!!!!!!!!!! ===== */
+/* START HERE NEXT TIME!!!!!!!!!!!!! ===== */
+/* START HERE NEXT TIME!!!!!!!!!!!!! ===== */
 /* MY WORK SECTION ====================== */
 
 #work{
@@ -358,40 +356,76 @@ nav {
 	body {
 		background:purple;
 	}
+	/* HEADER ================ */
 	.hero {
-		width:100%;
-		height:auto;
-		display: flex;
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		justify-content:center;
 		align-items:baseline;
 		flex-flow:row wrap;
 	}
+	header {
+		background: url(../img/kings-landing.JPG) no-repeat 0% 60%;
+		background-size:cover;
+	}
+	header h1 {
+		margin:3% 0 0 0;
+	}
 	h1#logo {
 		order:1;
-		width:35%;
-		flex-flow:row;
-		justify-content:space-around;
-		align-items:flex-start;
+		text-align:left;
+		background:none;
+		color:#1F8C7F;
+		font-size:3rem;
 	}
 	.menu {
 		order:2;
-		flex-flow:row;
-		justify-content:space-between;
-		align-items:flex-start;
 	}
+		nav ul {
+			background:none;
+		}
+			nav ul li a{
+				color:#1F8C7F;
+				font-size:1.35rem;
+				font-weight:bold;
+				font-family: 'Lato', sans-serif;
+			}
 	.mission {
 		order:3;
-		flex-flow:column wrap;
+		/* flex-flow:column wrap; */
 		margin-bottom:30px;
+		height: 175px;
+		margin:7% 0;
+	}
+	.skills {
+		text-align:center;
+		font-size:2rem;
+	}
+	 p span {
+		font-size:3rem;
+	}
+	
+}
+/* ABOUT SECTION ====================== */
+#about{
+	background:pink;
+}
+
+/* START HERE NEXT TIME!!!!!!!!!!!!! ===== */
+/* START HERE NEXT TIME!!!!!!!!!!!!! ===== */
+/* START HERE NEXT TIME!!!!!!!!!!!!! ===== */
+/* START HERE NEXT TIME!!!!!!!!!!!!! ===== */
+
+/* MY WORK SECTION ====================== */
+
+@media (min-width: 960px) {
+	body{
+		background-color:orange;
+	}
+	h1#logo{
+		margin-right:200px;
+		margin-left:0;
 	}
 }
    
-   
-@media (min-width: 960px) {
+@media (min-width: 1660px) {
 	/* ==================== */
 	/* DESKTOP STYLES ====== */
 	/* ==================== */
